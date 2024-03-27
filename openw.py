@@ -22,7 +22,7 @@ year = today.strftime("%Y")
 
 
 # Input test
-input_file = 'C://Users/jober/webscraper/city_data/2024/03_Mar/cities_info_2024_Mar_01_Friday.csv'
+input_file = 'C://Users/jober/webscraper/city_data/2024/01_Jan/cities_info_2024_Jan_31_Wednesday.csv'
 extract = pd.read_csv(input_file,sep=",")
 
 # Extracting the cities in a specific day
@@ -40,11 +40,14 @@ for city_name in locations:
     endpoint = 'direct'
     limit= limit_results
     API_key = Access_token
-    response = requests.get(base_url + endpoint + f'?q={city_name}&limit={limit}&appid={API_key}', params = {})
     try:
-        city_data.append(response.json()[0])
+        if city_name == 'No data':
+            city_data.append({})
+        else:
+            response = requests.get(base_url + endpoint + f'?q={city_name}&limit={limit}&appid={API_key}', params = {})
+            city_data.append(response.json()[0])
     except:
-        city_data.append("No data")
+        city_data.append({})
 
 # Building a currated dictionary from the cities information
 city_list = list()
@@ -71,12 +74,15 @@ for item in city_data:
 # Consulting the weather information for the geo-located cities of that day
 weather_data = list()
 for item in city_list:
-    base_url = 'https://api.openweathermap.org/data/2.5/'
-    endpoint = 'weather'
-    lat = item['latitude']
-    lon = item['longitude']
-    response = requests.get(base_url + endpoint + f'?lat={lat}&lon={lon}&exclude=hourly&appid={API_key}', params = {})
-    weather_data.append(response.json())
+    if item['name']=='No data':
+        weather_data.append({})
+    else:
+        base_url = 'https://api.openweathermap.org/data/2.5/'
+        endpoint = 'weather'
+        lat = item['latitude']
+        lon = item['longitude']
+        response = requests.get(base_url + endpoint + f'?lat={lat}&lon={lon}&exclude=hourly&appid={API_key}', params = {})
+        weather_data.append(response.json())
 
 # Elaborating a curated dictionay with the weather information found
 city_info = list()
@@ -112,12 +118,16 @@ df2 = pd.DataFrame(city_info)
 
 cols = ['sky_weather','weather_description','timestamp']
 weather_compiled = df1.merge(df2[cols], left_index=True, right_index=True)
+weather_compiled['name']=extract['city']
+weather_compiled['Team']=extract['name_reported']
 
 # To get the data in a new file, we prepare the file name
 weather_file = f'weather_{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
-outdir = Path(f"./weather_api/data/{year}/{month_number}_{month_name}")
+
+outdir = Path(f"./weather_api/data/{year}/01_Jan")
+# outdir = Path(f"./weather_api/data/{year}/{month_number}_{month_name}")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{weather_file}.csv")

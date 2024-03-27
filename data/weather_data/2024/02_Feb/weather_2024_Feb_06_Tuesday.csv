@@ -1,0 +1,27 @@
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Austin,30.2711286,-97.7436995,Texas,US,Clear,clear sky,2024-03-26 13:29:42,Austin FC
+Shymkent,No data,No data,No data,No data,No data,No data,No data,Ordabasy Shymkent
+Gaziantep,No data,No data,No data,No data,No data,No data,No data,Gaziantep FK
+Avenue Théo Verbeeck 2,No data,No data,No data,No data,No data,No data,No data,RSC Anderlecht
+Stellenbosch,-33.934444,18.869167,Western Cape,ZA,Clouds,broken clouds,2024-03-26 13:33:50,Stellenbosch FC
+Goiânia,-16.680882,-49.2532691,Goiás,BR,Rain,moderate rain,2024-03-26 13:29:28,Goiás EC
+Pachuca,20.1165413,-98.7413535,Hidalgo,MX,Clear,clear sky,2024-03-26 13:31:52,CF Pachuca
+Konya,No data,No data,No data,No data,No data,No data,No data,Konyaspor
+Ajman,25.3936557,55.4451432,Ajman Emirate,AE,Clouds,few clouds,2024-03-26 13:33:59,Ajman Club
+Como,45.8115623,9.0830353,Lombardy,IT,Clouds,overcast clouds,2024-03-26 13:34:03,Como 1907
+Almatý,No data,No data,No data,No data,No data,No data,No data,Kairat Almaty
+No data,No data,No data,No data,No data,No data,No data,No data,AA Argentinos Juniors
+Budapest,No data,No data,No data,No data,No data,No data,No data,Ferencvárosi TC
+Radom,51.4022557,21.1541546,Masovian Voivodeship,PL,Clear,clear sky,2024-03-26 13:34:05,Radomiak Radom
+Fort Lauderdale,26.1223084,-80.1433786,Florida,US,Clouds,scattered clouds,2024-03-26 13:30:27,Inter Miami CF
+Werner-Heisenberg-Allee 25,No data,No data,No data,No data,No data,No data,No data,Bayern Munich
+Calle Doctor Luis Calandre s/n,No data,No data,No data,No data,No data,No data,No data,FC Cartagena
+Hannover,52.3744779,9.7385532,Lower Saxony,DE,Clear,clear sky,2024-03-26 13:34:11,Hannover 96
+Nottingham,52.9534193,-1.1496461,England,GB,Rain,light rain,2024-03-26 13:34:14,Nottingham Forest
+Frisco,33.1506744,-96.8236116,Texas,US,Clear,clear sky,2024-03-26 13:33:11,FC Dallas
+Kiev,No data,No data,No data,No data,No data,No data,No data,Shakhtar Donetsk
+Trondheim,No data,No data,No data,No data,No data,No data,No data,Rosenborg BK
+Tianjin,39.0856735,117.1951073,Tianjin,CN,Mist,mist,2024-03-26 13:34:20,Tianjin Jinmen Tiger
+Santos,-23.960833,-46.333889,São Paulo,BR,Rain,light rain,2024-03-26 13:34:23,Santos FC
+Av. Perito Moreno y Av. Varela,No data,No data,No data,No data,No data,No data,No data,CA San Lorenzo de Almagro
+Dalian,38.9181714,121.6282945,Liaoning,CN,Clear,clear sky,2024-03-26 13:34:26,Dalian Professional (2009-2024)

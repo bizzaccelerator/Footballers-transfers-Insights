@@ -1,0 +1,45 @@
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Atenas,37.9839412,23.7283052,Attica,GR,Clouds,scattered clouds,2024-03-26 20:02:52,AEK Athens
+Roma,41.8933203,12.4829321,Lazio,IT,Clouds,scattered clouds,2024-03-26 20:03:06,AS Roma
+No data,No data,No data,No data,No data,No data,No data,No data,Botafogo de Futebol e Regatas
+Carrera 74 # 48-21Medellín,No data,No data,No data,No data,No data,No data,No data,Atlético Nacional
+Manuel Quiroga,No data,No data,No data,No data,No data,No data,No data,Independiente del Valle
+Ciudad de México,No data,No data,No data,No data,No data,No data,No data,UNAM Pumas
+Brujas,51.2085526,3.226772,West Flanders,BE,Clouds,overcast clouds,2024-03-26 20:03:06,Club Brugge KV
+Medellín,6.2443382,-75.573553,Antioquia,CO,Clouds,scattered clouds,2024-03-26 20:05:35,Independiente Medellín
+Épinal,48.1747684,6.4503643,Grand Est,FR,Clouds,overcast clouds,2024-03-26 20:06:32,SAS Epinal
+Valenciennes,50.3579317,3.5234846,Hauts-de-France,FR,Clouds,overcast clouds,2024-03-26 20:06:33,Valenciennes FC
+Algiers,36.7753606,3.0601882,Algiers,DZ,Clouds,scattered clouds,2024-03-26 20:06:34,Paradou AC
+Los Ángeles,34.0536909,-118.242766,California,US,Clear,clear sky,2024-03-26 20:02:30,Los Angeles FC
+Neuchâtel,46.9895828,6.9292641,Neuchâtel,CH,Rain,light rain,2024-03-26 20:06:36,Neuchâtel Xamax FCS
+Lisboa,No data,No data,No data,No data,No data,No data,No data,SL Benfica
+No data,No data,No data,No data,No data,No data,No data,No data,Vålerenga Fotball Elite
+Angers,47.4739884,-0.5515588,Pays de la Loire,FR,Clouds,broken clouds,2024-03-26 20:07:07,Angers SCO
+Kiryat Shemona,33.210757099999995,35.574833502404715,North District,IL,Clouds,overcast clouds,2024-03-26 20:07:08,Ironi Kiryat Shmona
+Murska Sobota,No data,No data,No data,No data,No data,No data,No data,NS Mura
+Ciudad de México,No data,No data,No data,No data,No data,No data,No data,UNAM Pumas
+Elche,38.2653307,-0.6988391,Valencian Community,ES,Clouds,scattered clouds,2024-03-26 20:07:08,Elche CF
+subsuelo,No data,No data,No data,No data,No data,No data,No data,GNK Dinamo Zagreb
+Guimarães,No data,No data,No data,No data,No data,No data,No data,Vitória Guimarães SC
+Randers,56.4355428,10.0425957,Central Denmark Region,DK,Clouds,overcast clouds,2024-03-26 20:07:09,Randers FC
+Liubliana,No data,No data,No data,No data,No data,No data,No data,NK Olimpija Ljubljana
+No data,No data,No data,No data,No data,No data,No data,No data,Al-Markhiya SC
+Estrasburgo,48.584614,7.7507127,Grand Est,FR,Clear,clear sky,2024-03-26 20:05:23,RC Strasbourg Alsace
+Via Nicolò Fieschi,No data,No data,No data,No data,No data,No data,No data,Spezia Calcio
+Sao Paulo,-23.5506507,-46.6333824,São Paulo,BR,Drizzle,light intensity drizzle,2024-03-26 20:03:36,Sport Club Corinthians Paulista
+Estambul,No data,No data,No data,No data,No data,No data,No data,Istanbulspor
+Údine,46.0634632,13.2358377,Friuli-Venezia Giulia,IT,Clouds,broken clouds,2024-03-26 20:00:31,Udinese Calcio
+Via Pietro Jacopo de Gennaro80125Nápoles,No data,No data,No data,No data,No data,No data,No data,SSC Napoli
+No data,No data,No data,No data,No data,No data,No data,No data,Austria Vienna
+Av. Figueroa Alcorta 7597,No data,No data,No data,No data,No data,No data,No data,CA River Plate
+Terni,42.5641417,12.6405466,Umbria,IT,Clouds,overcast clouds,2024-03-26 20:07:13,Ternana Calcio
+Limassol,34.6852901,33.0332657,South Cyprus,CY,Rain,light rain,2024-03-26 20:07:14,Aris Limassol
+Crotona,39.0806223,17.127196,Calabria,IT,Clouds,few clouds,2024-03-26 20:07:15,FC Crotone
+Av. Marathon 5300Macul,No data,No data,No data,No data,No data,No data,No data,CSD Colo-Colo
+Pohang,No data,No data,No data,No data,No data,No data,No data,Pohang Steelers
+Melbourne,-37.8142176,144.9631608,Victoria,AU,Clouds,broken clouds,2024-03-26 20:03:53,Melbourne City FC
+Colonia del Sacramento,-34.4698592,-57.8433679,Colonia,UY,Clear,clear sky,2024-03-26 20:07:17,Club Plaza Colonia
+Pasaje Mozart y CorbattaAvellaneda,No data,No data,No data,No data,No data,No data,No data,Racing Club
+Salò,45.6056775,10.520069,Lombardy,IT,Clouds,overcast clouds,2024-03-26 20:07:18,Feralpisalò
+Minsk,No data,No data,No data,No data,No data,No data,No data,Dinamo Minsk
+No data,No data,No data,No data,No data,No data,No data,No data,FK Partizan Belgrade U19

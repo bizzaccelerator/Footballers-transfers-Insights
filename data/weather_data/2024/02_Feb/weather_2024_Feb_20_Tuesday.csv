@@ -1,0 +1,14 @@
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Dubái,25.2653471,55.2924914,Dubai,AE,Clouds,scattered clouds,2024-03-26 19:46:18,Shabab Al-Ahli Club
+Fort Lauderdale,26.1223084,-80.1433786,Florida,US,Clouds,overcast clouds,2024-03-26 19:47:59,Inter Miami CF
+Goiânia,-16.680882,-49.2532691,Goiás,BR,Clouds,overcast clouds,2024-03-26 19:46:45,Goiás EC
+Estocolmo,No data,No data,No data,No data,No data,No data,No data,IF Brommapojkarna
+Vejle,55.7000057,9.5333238,Region of Southern Denmark,DK,Clouds,overcast clouds,2024-03-26 19:48:23,Vejle Boldklub
+No data,No data,No data,No data,No data,No data,No data,No data,CDP Curicó Unido
+Solna,No data,No data,No data,No data,No data,No data,No data,AIK
+Pachuca,20.1165413,-98.7413535,Hidalgo,MX,Clouds,few clouds,2024-03-26 19:48:24,CF Pachuca
+Skien,No data,No data,No data,No data,No data,No data,No data,Odds BK
+No data,No data,No data,No data,No data,No data,No data,No data,Lokomotiv Moscow
+Pilsen,49.7477415,13.3775249,Southwest,CZ,Clouds,overcast clouds,2024-03-26 19:48:25,FC Viktoria Plzen
+Tiráspol,46.8371103,29.6109989,Pridnestrovie,MD,Clouds,scattered clouds,2024-03-26 19:48:26,FC Sheriff Tiraspol
+Sofía,No data,No data,No data,No data,No data,No data,No data,Levski Sofia

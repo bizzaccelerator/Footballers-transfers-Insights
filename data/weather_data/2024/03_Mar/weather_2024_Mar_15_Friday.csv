@@ -1,36 +1,6 @@
-name,latitude,longitude,state,country,sky_weather,weather_description,timestamp
-Seattle,47.6038321,-122.330062,Washington,US,Rain,moderate rain,2024-03-22 15:49:44
-Rio de Janeiro,-22.9110137,-43.2093727,Rio de Janeiro,BR,Rain,light rain,2024-03-22 15:49:32
-Curitiba,-25.4295963,-49.2712724,Paraná,BR,Clouds,overcast clouds,2024-03-22 15:47:48
-Bragança Paulista,-22.9520235,-46.5418586,São Paulo,BR,Clouds,overcast clouds,2024-03-22 15:49:47
-Fortaleza,-3.7304512,-38.5217989,Ceará,BR,Rain,light rain,2024-03-22 15:49:48
-Gliwice,50.294113,18.6657306,Silesian Voivodeship,PL,Clouds,overcast clouds,2024-03-22 15:49:49
-Częstochowa,50.8120466,19.113213,Silesian Voivodeship,PL,Rain,light rain,2024-03-22 15:49:50
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-Leuven,50.879202,4.7011675,Flemish Brabant,BE,Rain,light rain,2024-03-22 15:46:01
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-Wil (SG),47.465266,9.0415478,St. Gallen,CH,Clouds,overcast clouds,2024-03-22 15:49:58
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-Nottingham,52.9534193,-1.1496461,England,GB,Clouds,scattered clouds,2024-03-22 15:50:02
-No data,No data,No data,No data,No data,No data,No data,No data
-Dresden,51.0493286,13.7381437,Saxony,DE,Clear,clear sky,2024-03-22 15:45:11
-No data,No data,No data,No data,No data,No data,No data,No data
-Moscow,55.7504461,37.6174943,Moscow,RU,Clouds,overcast clouds,2024-03-22 15:50:06
-Toluca,19.292545,-99.6569007,State of Mexico,MX,Clear,clear sky,2024-03-22 15:50:09
-No data,No data,No data,No data,No data,No data,No data,No data
-Coventry,52.4081812,-1.510477,England,GB,Clouds,few clouds,2024-03-22 15:50:10
-Le Havre,49.4938975,0.1079732,Normandy,FR,Clouds,broken clouds,2024-03-22 15:50:14
-No data,No data,No data,No data,No data,No data,No data,No data
-Venlo,51.39244885,6.1511724144122955,Limburg,NL,Rain,moderate rain,2024-03-22 15:50:16
-No data,No data,No data,No data,No data,No data,No data,No data
-Thessaloniki,40.6403167,22.9352716,Macedonia and Thrace,GR,Clouds,few clouds,2024-03-22 15:50:18
-Houston,29.7589382,-95.3676974,Texas,US,Clear,clear sky,2024-03-22 15:47:41
-No data,No data,No data,No data,No data,No data,No data,No data
-No data,No data,No data,No data,No data,No data,No data,No data
-Qarshi,38.83998,65.7927948,Qashqadaryo Region,UZ,Clear,clear sky,2024-03-22 15:50:21
-Suita,34.764884,135.51735,Osaka Prefecture,JP,Rain,moderate rain,2024-03-22 15:50:22
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Av. Pablo Ricchieri 1595,No data,No data,No data,No data,No data,No data,No data,CA Talleres
+Recife,-8.0584933,-34.8848193,Pernambuco,BR,Clouds,scattered clouds,2024-03-26 13:01:22,Sport Club do Recife
+Lillestrøm,No data,No data,No data,No data,No data,No data,No data,Lillestrøm SK
+No data,No data,No data,No data,No data,No data,No data,No data,Crystal Palace
+Kazán,55.7823547,49.1242266,Tatarstan,RU,Rain,heavy intensity rain,2024-03-26 13:01:44,Rubin Kazan

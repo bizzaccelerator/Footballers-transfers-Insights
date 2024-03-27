@@ -17,7 +17,7 @@ year = today.strftime("%Y")
 
 # Obtaining the data from current day
 # input_file = f'C://Users/jober/webscraper/data/{year}/{month_number}_{month_name}\{year}_{month_name}_{number_day}_{day_name}.csv'
-input_file = 'C://Users/jober/webscraper/data/2024/02_Feb/2024_Feb_01_Thursday.csv'
+input_file = 'C://Users/jober/webscraper/data/2024/02_Feb/2024_Feb_18_Sunday.csv'
 dates = pd.read_csv(input_file,sep=",")
 
 # reading a complete day
@@ -173,7 +173,7 @@ dataset_file2 = f'cities_series_{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
 # outdir = Path(f"./city_data/{year}/{month_number}_{month_name}")
-outdir = Path(f"./city_data/{year}/02_Feb")
+outdir = Path(f"./city_data/{year}/03_Mar")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{dataset_file}.csv")

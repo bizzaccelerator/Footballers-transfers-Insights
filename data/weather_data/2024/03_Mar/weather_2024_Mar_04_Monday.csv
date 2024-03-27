@@ -1,0 +1,5 @@
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Almelo,52.3567956,6.66725277634109,Overijssel,NL,Clouds,overcast clouds,2024-03-26 12:56:35,Heracles Almelo
+Vilna,54.6870458,25.2829111,Vilnius County,LT,Clear,clear sky,2024-03-26 12:56:38,FK Zalgiris Vilnius
+Fort Lauderdale,26.1223084,-80.1433786,Florida,US,Clouds,broken clouds,2024-03-26 12:52:04,Inter Miami CF
+Bodø,No data,No data,No data,No data,No data,No data,No data,FK Bodø/Glimt

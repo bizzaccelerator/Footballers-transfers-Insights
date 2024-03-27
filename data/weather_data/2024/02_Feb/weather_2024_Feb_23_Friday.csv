@@ -1,0 +1,14 @@
+name,latitude,longitude,state,country,sky_weather,weather_description,timestamp,Team
+Commerce City,39.8083196,-104.9338675,Colorado,US,Haze,haze,2024-03-26 19:50:55,Colorado Rapids
+Aalborg,57.0462626,9.9215263,North Denmark Region,DK,Clouds,broken clouds,2024-03-26 19:52:13,RB Bragantino U20
+Bodø,No data,No data,No data,No data,No data,No data,No data,Aalborg BK
+No data,No data,No data,No data,No data,No data,No data,No data,FK Bodø/Glimt
+Kovalivka,49.606667,34.704445,Poltava Oblast,UA,Clouds,few clouds,2024-03-26 19:52:14,AA Argentinos Juniors
+Río de Janeiro,-22.9110137,-43.2093727,Rio de Janeiro,BR,Rain,light rain,2024-03-26 19:51:01,Kolos Kovalivka
+Nottingham,52.9534193,-1.1496461,England,GB,Rain,moderate rain,2024-03-26 19:52:16,Clube de Regatas Vasco da Gama
+Wuhan,30.5951051,114.2999353,Hubei,CN,Clouds,overcast clouds,2024-03-26 19:52:17,Nottingham Forest
+Pretoria,-25.7459277,28.1879101,Gauteng,ZA,Clear,clear sky,2024-03-26 19:52:18,Wuhan Three Towns
+Bodø,No data,No data,No data,No data,No data,No data,No data,Mamelodi Sundowns FC
+Av. Pablo Livas 2011,No data,No data,No data,No data,No data,No data,No data,FK Bodø/Glimt
+Isahaya,No data,No data,No data,No data,No data,No data,No data,CF Monterrey
+Atlanta,33.7489924,-84.3902644,Georgia,US,Clouds,overcast clouds,2024-03-26 19:50:32,V-Varen Nagasaki
