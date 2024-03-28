@@ -16,7 +16,7 @@ month_number = today.strftime("%m")
 year = today.strftime("%Y")
 
 # Obtaining the data from current day
-# input_file = f'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/{year}/{month_number}_{month_name}\{year}_{month_name}_{number_day}_{day_name}.csv'
+# input_file = f'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/{year}/{month_number}_{month_name}/{year}_{month_name}_{number_day}_{day_name}.csv'
 input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/2024/03_Mar/2024_Mar_27_Wednesday.csv'
 dates = pd.read_csv(input_file,sep=",")
 
