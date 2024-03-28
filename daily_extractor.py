@@ -9,7 +9,7 @@ import os, os.path
 from pathlib import Path
 
 # Set the location of Chrome driver
-path = "C:/Users/jober/webscraper/chromedriver-win32/chromedriver.exe"
+path = "C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/chromedriver-win32/chromedriver.exe"
 s = Service(path) 
 
 ChromeOptions = Options()
@@ -44,20 +44,6 @@ pages = pages[0:10]
 for page in pages:
     pagelinks.append(page.get_attribute('href'))
     # print(page.get_attribute('href'))
-
-# Opening the information of each player
-# player = driver.find_element(By.CSS_SELECTOR,value="td.hauptlink a").get_property('href')
-# time.sleep(1)
-# driver.get(player)
-
-# List of all players in the first 
-# player_list = []
-# players = driver.find_elements(By.CSS_SELECTOR,value="table.inline-table tbody tr td.hauptlink a")
-# players = players[0::3]
-# print(len(players))
-# for player in players:
-#     print(player.get_property('href'))
-
 
 # Preparing the list to construct the dataframe
 time.sleep(3)
@@ -187,7 +173,7 @@ year = today.strftime("%Y")
 dataset_file = f'{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
-outdir = Path(f"./data/{year}/{month_number}_{month_name}")
+outdir = Path(f"./data/players_data/{year}/{month_number}_{month_name}")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{dataset_file}.csv")

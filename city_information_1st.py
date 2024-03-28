@@ -16,8 +16,8 @@ month_number = today.strftime("%m")
 year = today.strftime("%Y")
 
 # Obtaining the data from current day
-# input_file = f'C://Users/jober/webscraper/data/{year}/{month_number}_{month_name}\{year}_{month_name}_{number_day}_{day_name}.csv'
-input_file = 'C://Users/jober/webscraper/data/2024/02_Feb/2024_Feb_18_Sunday.csv'
+# input_file = f'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/{year}/{month_number}_{month_name}\{year}_{month_name}_{number_day}_{day_name}.csv'
+input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/2024/03_Mar/2024_Mar_27_Wednesday.csv'
 dates = pd.read_csv(input_file,sep=",")
 
 # reading a complete day
@@ -169,20 +169,20 @@ month_name = today.strftime("%b")
 month_number = today.strftime("%m")
 year = today.strftime("%Y")
 dataset_file = f'cities_info_{year}_{month_name}_{number_day}_{day_name}'
-dataset_file2 = f'cities_series_{year}_{month_name}_{number_day}_{day_name}'
+# dataset_file2 = f'cities_series_{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
 # outdir = Path(f"./city_data/{year}/{month_number}_{month_name}")
-outdir = Path(f"./city_data/{year}/03_Mar")
+outdir = Path(f"./data/city_data/{year}/03_Mar")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{dataset_file}.csv")
-outname2 = Path(f"{dataset_file2}.csv")
+# outname2 = Path(f"{dataset_file2}.csv")
 fullpath = os.path.join(outdir, outname)
-fullpath2 = os.path.join(outdir, outname2)
+# fullpath2 = os.path.join(outdir, outname2)
 
 # Save the new dataset in the directory selected
 df.to_csv(fullpath,index=False)
 
-ciudades = pd.Series(df['city']).reset_index(drop=True)
-ciudades.to_csv(fullpath2,index=False)
+# ciudades = pd.Series(df['city']).reset_index(drop=True)
+# ciudades.to_csv(fullpath2,index=False)
