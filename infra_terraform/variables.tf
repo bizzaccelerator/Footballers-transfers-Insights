@@ -1,5 +1,5 @@
 locals {
-  data_lake_bucket = "Soccer-dataset"
+  data_lake_bucket = "soccer-dataset"
 }
 
 variable "credentials" {
@@ -11,6 +11,7 @@ variable "credentials" {
 
 variable "project" {
   description = "Final project for the Data Engineering Zoomcamp of Data Talks Club."
+  default = "data-taxi-1"
 }
 
 variable "region" {
