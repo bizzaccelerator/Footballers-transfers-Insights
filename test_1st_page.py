@@ -134,11 +134,6 @@ players_data = dict({'tm_id': tm_id,
 players = pd.DataFrame(players_data)
 players.to_csv('data_extracted.csv',index=False)
 
-# Opening the detailed data of the first player
-# player = driver.find_element(By.CSS_SELECTOR,value="td.hauptlink a").get_property('href')
-# time.sleep(1)
-# driver.get(player)
-
 # Timer to set the time for the bot wait with the screen open
 time.sleep(20)
 

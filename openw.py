@@ -22,7 +22,7 @@ year = today.strftime("%Y")
 
 
 # Input test
-input_file = 'C://Users/jober/webscraper/city_data/2024/01_Jan/cities_info_2024_Jan_31_Wednesday.csv'
+input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/city_data/2024/03_Mar/cities_info_2024_Mar_29_Friday.csv'
 extract = pd.read_csv(input_file,sep=",")
 
 # Extracting the cities in a specific day
@@ -30,7 +30,7 @@ locations = pd.Series(extract['city'] ).reset_index(drop=True)
 
 # reading the geographic information of the cities in that day
 limit_results= "2"
-with open("C://Users/jober/webscraper/weather_api/open_weather_API.json") as user_file:
+with open("C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/credentials/open_weather_API.json") as user_file:
   file_contents = json.load(user_file)
 Access_token = file_contents['key']
 
@@ -126,8 +126,8 @@ weather_file = f'weather_{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
 
-outdir = Path(f"./weather_api/data/{year}/01_Jan")
-# outdir = Path(f"./weather_api/data/{year}/{month_number}_{month_name}")
+# outdir = Path(f"./data/weather_api/{year}/03_Mar")
+outdir = Path(f"./data/weather_data/{year}/{month_number}_{month_name}")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{weather_file}.csv")
@@ -135,4 +135,3 @@ fullpath = os.path.join(outdir, outname)
 
 # Save the new dataset in the directory selected
 weather_compiled.to_csv(fullpath,index=False)
-
