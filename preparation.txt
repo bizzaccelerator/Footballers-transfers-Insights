@@ -1,0 +1,11 @@
+1. DEPLOYING A SCRAPING SCRIPT AND SELENIUM IN GOOGLE CLOUD RUN
+
+https://www.roelpeters.be/how-to-deploy-a-scraping-script-and-selenium-in-google-cloud-run/
+
+2. ENABLING THE API ARTIFACTS REGISTRY
+
+https://stackoverflow.com/questions/72251787/permission-artifactregistry-repositories-downloadartifacts-denied-on-resource
+
+https://docs.bridgecrew.io/docs/bc_gcp_iam_2
+
+https://www.pascallandau.com/blog/gcp-compute-instance-vm-docker/#authenticate-docker-via-gcloud
