@@ -9,3 +9,7 @@ https://stackoverflow.com/questions/72251787/permission-artifactregistry-reposit
 https://docs.bridgecrew.io/docs/bc_gcp_iam_2
 
 https://www.pascallandau.com/blog/gcp-compute-instance-vm-docker/#authenticate-docker-via-gcloud
+
+3. INSTALLING REQUIREMENTS IN MAGE DEPLOYED.
+First configure a global variables as:
+export USER_CODE_PATH=/home/src/your_project_name
