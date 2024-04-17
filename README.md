@@ -16,17 +16,20 @@ According to the business problem, as a Data engineer, I'm required to identify 
 ## Solution proposed
 The engineering solution proposed extract players transferences information from transfermarket, one of the largest sport websites of the world. The extraction for each transference, valued at 500.000 Euros and upper, is made daily by using `selenium` to perform webscraping over the detailed website (https://www.transfermarkt.com/statistik/neuestetransfers), then saving a .csv file in Google Clud Storage (GCS) corresponding to each day. 
 
-Once all the transferences for the day were collected, every seller team in that .csv file is used as input into Wikpedia API to get free information for each one of those teams reutrning fields such as the team name, nickname, foundation information, coach, and city, among others. Then the information returned for each team is collected into a .csv which will be saved into GCS. 
+Once all the transferences for the day were collected, every seller team in that .csv file is used as input into Wikpedia API to get free information for each one of those teams returning fields such as the team name, nickname, foundation information, coach, and city, among others. Then the information returned for each team is collected into a .csv which will be saved into GCS. 
 
-Therefore, the field `city` from the teams information saved from wikipedia for each day will then be used as input into weatherapi to get the weather data for each location reported. Thats the way I get the climate status and all weather data of interest.
+Therefore, the field `city` from the teams information saved from wikipedia for each day will then be used as input into weatherapi to get the weather data for each location reported. Thats the way I get the climate status and all the weather data of interest.
 
-Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ). The cleaned data into BQ will be transformed using `dbt` to elaborate a final table in BQ wich will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
+Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ). The cleaned data into BQ will be transformed using `dbt` to elaborate a final table in BQ which will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
 
-All those data operations are performed using `python` and a dockerized application image with selenium and `Mage` as orchestration tool. The erquired infraestructure in defined and modified using `Terraform`. 
+All those data operations are performed using `python` and a dockerized application image with selenium and `Mage` as orchestration tool. The required infrastructure in defined and modified using `Terraform`. 
 
-See here beloow the infraestructure utilized: 
+See here below the infrastructure utilized:
 
 ![Tech Infraestructure](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/Infrastructura.gif)
+
+### Technologies used: 
+
 
 
 
