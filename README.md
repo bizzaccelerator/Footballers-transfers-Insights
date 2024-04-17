@@ -20,7 +20,7 @@ Once all the transferences for the day were collected, every seller team in that
 
 Therefore, the field `city` from the teams information saved from wikipedia for each day will then be used as input into weatherapi to get the weather data for each location reported. Thats the way I get the climate status and all the weather data of interest. Then the weather information returned for each location is collected into a .csv which will be saved into a bucket in GCS.
 
-Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ). The cleaned data into BQ will be transformed using `dbt` to elaborate a final table in BQ which will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
+Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ). The cleaned data into BQ will be transformed using `dbt` to elaborate a final, optimized table in BQ which will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
 
 All those data operations are performed using `python` and a dockerized application image with selenium and `Mage` as orchestration tool. The required infrastructure in defined and modified using `Terraform`. 
 
@@ -42,4 +42,13 @@ For this project I used the following technologies:
 - **Data transformation:** Data Build Tool (dbt).
 - **Containerizing:** Docker for developing, shipping, and running applications in containers. 
 
+### Tutorial to reproduce the project:
+
+The tutorials on how to setup and run this project can be found `here`.
+
+## Tangible result:
+
+Discover insights from our live and interactive dashboard, which will be updated daily until my credits expire.
+
+### Dashboard:
 
