@@ -18,15 +18,13 @@ def load_from_google_cloud_storage(*args, **kwargs):
     month_name = yesterday.strftime("%b")
     month_number = yesterday.strftime("%m")
     year = yesterday.strftime("%Y")
-    # dataset_file = f'{year}_{month_name}_{number_day}_{day_name}'
-    dataset_file = f'cities_info_2024_Apr_03_Wednesday'
+    dataset_file = f'{year}_{month_name}_{number_day}_{day_name}'
     
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
     bucket_name = 'soccer-dataset_data-taxi-1' # Bucket Origin
-    # object_key = f'data/city_data/{year}/{month_number}_{month_name}/{dataset_file}.csv'  # The path to store in GCS
-    object_key = f'data/city_data/{year}/04_Apr/{dataset_file}.csv'
+    object_key = f'data/city_data/{year}/{month_number}_{month_name}/{dataset_file}.csv'  # The path to store in GCS
 
     print('Loading the file: ',{dataset_file},'.csv into gcs')
 

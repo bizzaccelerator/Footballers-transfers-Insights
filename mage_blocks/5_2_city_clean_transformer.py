@@ -37,8 +37,7 @@ def execute_transformer_action(data: DataFrame, *args, **kwargs) -> DataFrame:
     month_name = yesterday.strftime("%b")
     month_number = yesterday.strftime("%m")
     year = yesterday.strftime("%Y")
-    # dataset_date = f'{year}-{month_number}-{number_day}'
-    dataset_date = '2024-04-03'
+    dataset_date = f'{year}-{month_number}-{number_day}'
 
     data['date'] = dataset_date
     data['date'] = data['date'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d'))

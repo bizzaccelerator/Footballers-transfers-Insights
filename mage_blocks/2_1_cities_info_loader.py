@@ -26,8 +26,7 @@ def load_from_google_cloud_storage(*args, **kwargs):
     month_name = yesterday.strftime("%b")
     month_number = yesterday.strftime("%m")
     year = yesterday.strftime("%Y")
-    # dataset_file = f'{year}_{month_name}_{number_day}_{day_name}'
-    dataset_file = f'2024_Apr_04_Thursday'
+    dataset_file = f'{year}_{month_name}_{number_day}_{day_name}'
     
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'

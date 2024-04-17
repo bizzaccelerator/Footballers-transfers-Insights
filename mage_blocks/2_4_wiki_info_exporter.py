@@ -25,7 +25,6 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     month_number = yesterday.strftime("%m")
     year = today.strftime("%Y")
     dataset_file = f'cities_info_{year}_{month_name}_{number_day}_{day_name}'
-    # dataset_file = f'cities_info_2024_Apr_04_Thursday'
     
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'

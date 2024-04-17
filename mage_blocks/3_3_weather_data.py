@@ -60,13 +60,6 @@ def load_data_from_api(data: DataFrame, *args, **kwargs):
                 }
             city_list.append(cities)
     
-    # opening the list
-    # places = pd.DataFrame(city_list)
-    # def select_number_columns(places):
-    #     cities = places[['name']]
-    #     return cities
-    # places = pd.DataFrame(select_number_columns(places))
-    
     # Consulting the weather information for the geo-located cities of that day
     weather_data = list()
     for item in city_list:
