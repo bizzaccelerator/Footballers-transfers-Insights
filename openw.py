@@ -22,7 +22,7 @@ year = today.strftime("%Y")
 
 
 # Input test
-input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/city_data/2024/03_Mar/cities_info_2024_Mar_29_Friday.csv'
+input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/city_data/2024/04_Apr/cities_info_2024_Apr_09_Tuesday.csv'
 extract = pd.read_csv(input_file,sep=",")
 
 # Extracting the cities in a specific day

@@ -17,7 +17,7 @@ year = today.strftime("%Y")
 
 # Obtaining the data from current day
 # input_file = f'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/{year}/{month_number}_{month_name}/{year}_{month_name}_{number_day}_{day_name}.csv'
-input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/2024/03_Mar/2024_Mar_29_Friday.csv'
+input_file = 'C://Users/jober/OneDrive/Desktop/Footballers_transfers_Insights/data/players_data/2024/04_Apr/2024_Apr_09_Thursday.csv'
 dates = pd.read_csv(input_file,sep=",")
 
 # reading a complete day
@@ -173,7 +173,7 @@ dataset_file = f'cities_info_{year}_{month_name}_{number_day}_{day_name}'
 
 # Creates a directory if doesn't exist in windows
 # outdir = Path(f"./city_data/{year}/{month_number}_{month_name}")
-outdir = Path(f"./data/city_data/{year}/03_Mar")
+outdir = Path(f"./data/city_data/{year}/04_Apr")
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 outname = Path(f"{dataset_file}.csv")
