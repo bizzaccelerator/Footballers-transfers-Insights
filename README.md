@@ -2,6 +2,8 @@
 
 The goal of this project was to apply everything I have learned in the 2.024 cohort of the Data Engineering Zoomcamp by Data Talks Club. The project here below simulates a real scenario where C-suite directors of a football players' representative agency need information to take more informed decisions about where and when make investments in players.  
 
+![] ()
+
 ## Problem statement
 This could be understood in two leves: a business problem and a technical problem. 
 
