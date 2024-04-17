@@ -22,5 +22,7 @@ Therefore, the field `city` from the teams information saved from wikipedia for 
 
 Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery. 
 
+All those data operations are performed using `python` and a dockerized application image with selenium and `Mage` as orchestration tool. All the infraestructure in defined and modified using `Terraform`.
+
 
 
