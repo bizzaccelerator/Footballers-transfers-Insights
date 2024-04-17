@@ -13,4 +13,5 @@ This agency desires to optimize its investments on actives (the players), so it 
 ### _Technical problem:_
 According to the business problem, as a Data engineer, I'm required to identify and extract valuable data about the different players transactions at 500.000 Euros or upper, and the weather during the day when the transaction was executed, both from free sources available online. After that, it’s necessary to process and to clean raw data extracted, so a visualization tool can be made available to the decision takers at any time. All that, in a cloud solution that improve reliability, readability and safeness of the data at hand. 
 
-
+## Solution proposed
+The engineering solution proposed extrct players transferences information from transfermarket, one of the largest sport websites of the world. The extraction for each transference valued at 500.000 Euros and upper is made deily by using `selenium` to perform webscraping over the detailed website (https://www.transfermarkt.com/statistik/neuestetransfers). 
