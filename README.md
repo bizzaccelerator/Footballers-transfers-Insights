@@ -46,9 +46,18 @@ For this project I used the following technologies:
 
 The tutorials on how to setup and run this project can be found `here`.
 
-## Tangible result:
+## Tangible result
 
 Discover insights from our live and interactive dashboard, which will be updated daily until my credits expire.
 
 ### Dashboard:
 
+
+
+
+## Further Improvements
+
+There is scope for improvement in several areas of this project, such as:
+
+Conducting tests
+Implementing CI/CD
