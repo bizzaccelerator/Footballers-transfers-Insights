@@ -58,6 +58,10 @@ A dashboard was created to visually deliver the cleaned data required. Tho follo
 
 An interactive version of the dashboard can be foun [here](https://lookerstudio.google.com/reporting/3f8579ac-ce26-41f7-a0a1-0bbad627f03f) 
 
+### Recommendations
+
+It seems to exist an apparent relationship between the weather in a specific day and the number of player transferences performed in that specific day. However, it is recommended that further investigations need to be done.  
+
 ## Further Improvements
 
 There is scope for improvement in several areas of this project, such as:
