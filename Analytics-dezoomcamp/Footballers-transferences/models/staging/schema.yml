@@ -1,0 +1,13 @@
+
+version: 2
+
+sources:
+  - name: staging
+    database: data-taxi-1
+    schema: football_data
+
+    tables:
+      - name: players_data_cleaned
+      - name: city_data_cleaned
+      - name: weather_data_cleaned
+  
