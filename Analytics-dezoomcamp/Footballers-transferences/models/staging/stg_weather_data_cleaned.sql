@@ -11,7 +11,7 @@ weather_data as (
     select *,
         row_number() over(partition by team, date) as rn
     from {{ source('staging', 'weather_data_cleaned') }}
-    where latitude is not null
+    where latitude != 'No data'
 
 )
 
