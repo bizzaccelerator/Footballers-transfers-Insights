@@ -23,8 +23,16 @@ Use this [Dockerfile](https://github.com/bizzaccelerator/Footballers-transfers-I
 
 ## 3. Deploy the application image into cloud
 
-Once the base image is created, it needs to be loaded into `google cloud run`. In ordeer to do that, we need to load our Google SDK and run the following commands:
+Once the base image is created, it needs to be loaded into `google cloud run`. In ordeer to do that, we need to configure Docker for our GCP to push the image into Google's container registry. This might involve configuring Docker with gcloud command-line tool if not already done.
 
-> 
+Before you can push your Docker image to Google Artifact Registry, you need to tag it with the registry's name. The command looks something like this: 
 
-## 4. Create 
+> docker tag mageai/mageai:latest <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>
+
+After that, we push the Image to Google Artifact Registry. Once tagged, you can push the Docker image to Google Artifact Registry using the following command: 
+
+> docker push <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>
+
+## 4. Build the Data Pipelines
+
+
