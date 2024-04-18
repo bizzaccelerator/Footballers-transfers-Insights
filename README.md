@@ -18,9 +18,9 @@ The engineering solution proposed extract players transferences information in `
 
 Once all the transferences for the day were collected, every seller team in that .csv file is used as input into Wikpedia API to get free information for each one of those teams returning fields such as the team name, nickname, foundation information, coach, and city, among others. Then the information returned for each team is collected into a .csv which will be saved into a bucket in GCS. 
 
-Therefore, the field `city` from the teams information saved from wikipedia for each day will then be used as input into weatherapi to get the weather data for each location reported. Thats the way I get the climate status and all the weather data of interest. Then the weather information returned for each location is collected into a .csv which will be saved into a bucket in GCS.
+Therefore, the field `city` from the teams information saved from wikipedia for each day will then be used as input into openweather-api to get the weather data for each location reported. Thats the way I get the climate status and all the weather data of interest. Then the weather information returned for each location is collected into a .csv which will be saved into a bucket in GCS.
 
-Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ). The cleaned data into BQ will be transformed using `dbt` to elaborate a final, optimized table in BQ which will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
+Once all raw data is collected for players, teams and weather targets, a pipeline - one for each source - is implemented to clean the data and save it into individual tables in BigQuery (BQ) partitioned by date of transference. The cleaned data into BQ will be transformed using `dbt` to elaborate a final, optimized table in BQ which will be sent into `Looker` to generate a dashboard that allow the C-suite managers to take the required decisions. 
 
 All those data operations are performed using `python` and a dockerized application image with selenium and `Mage` as orchestration tool. The required infrastructure in defined and modified using `Terraform`. 
 
@@ -44,7 +44,7 @@ For this project I used the following technologies:
 
 ### Tutorial to reproduce the project:
 
-The tutorials on how to setup and run this project can be found `here`.
+The tutorials on how to setup and run this project can be found [here](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/tutorials.md).
 
 ## Tangible result
 
