@@ -27,12 +27,13 @@ Once the base image is created, it needs to be loaded into `google cloud run`. I
 
 Before you can push your Docker image to Google Artifact Registry, you need to tag it with the registry's name. The command looks something like this: 
 
-> docker tag mageai/mageai:latest <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>
+> 'docker tag mageai/mageai:latest <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>'
 
 After that, we push the Image to Google Artifact Registry. Once tagged, you can push the Docker image to Google Artifact Registry using the following command: 
 
-> docker push <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>
+> 'docker push <REGION>-docker.pkg.dev/<PROJECT-ID>/<REPOSITORY>/<IMAGE>:<TAG>'
 
 ## 4. Build the Data Pipelines
+
 
 
