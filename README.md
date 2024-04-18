@@ -52,8 +52,11 @@ Discover insights from our live and interactive dashboard, which will be updated
 
 ### Dashboard:
 
+A dashboard was created to visually deliver the cleaned data required. Tho following image captures it:
 
+![Dashboard picture](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/dashboard.jpg)
 
+An interactive version of the dashboard can be foun [here](https://lookerstudio.google.com/reporting/3f8579ac-ce26-41f7-a0a1-0bbad627f03f) 
 
 ## Further Improvements
 
