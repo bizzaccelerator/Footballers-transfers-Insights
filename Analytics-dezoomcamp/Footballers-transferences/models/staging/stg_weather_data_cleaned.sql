@@ -11,15 +11,15 @@ weather_data as (
     select *,
         row_number() over(partition by team, date) as rn
     from {{ source('staging', 'weather_data_cleaned') }}
-    where sky_weather is not null
+    where latitude != 'No data'
 
 )
 
 select
     name,
     -- geolocation
-    cast(latitude as numeric(6,2)) as latitude,
-    cast(longitude as numeric(6,2)) as longitude,
+    cast(latitude as numeric) as latitude,
+    cast(longitude as numeric) as longitude,
     state,
     country,
     -- weather information
