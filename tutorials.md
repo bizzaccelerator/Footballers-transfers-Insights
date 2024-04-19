@@ -41,6 +41,12 @@ Once players' transferences data is at hand, then a second pipeline is used the 
 
 After that, city name is used to get geographic locations and its corresponding weather at the date of transference by using the following blocks: [3_1_weather_locations](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_1_weather_locations.py), [3_2_curated_weather_data](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_2_curated_weather_data.py), [3_3_weather_data](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_3_weather_data.py) and [3_4_weather_exporter_to_gcs](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_4_weather_exporter_to_gcs.py). 
 
-The following image illustrate the relationship between blocks above:
+The following image illustrate the relationship between blocks in raw set of pipelines above:
 
-![]()
+![Raw data pipelines](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/Raw%20pipelines.jpg)
+
+Having all the raw data into a bucket in GCS, we run the second set of pipelines which will extract the information, transform it, and save it into BigQuery. [4_1_players_data_cleaned](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/4_1_players_data_cleaned.py), [4_2_players_data_transformed](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/4_2_players_data_transformed.py), and [4_3_players_cleaned_to_bq](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/4_3_players_cleaned_to_bq.py) are the blocks used to cleand and export the players data. The blocks [5_1_city_clean_loader](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/5_1_city_clean_loader.py), [5_2_city_clean_transformer](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/5_2_city_clean_transformer.py), and [5_3_city_clean_exporter](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/5_3_city_clean_exporter.py) are used to clean and export the city information. And [6_1_weather_clean_loader](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/6_1_weather_clean_loader.py), [6_2_weather_clean_transformed](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/6_2_weather_clean_transformed.py) and [6_3_weather_cleaned_transformed](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/6_3_weather_cleaned_transformed.py) are the block used to extract, clean and export the weather data.
+
+The following image illustrate the relationship between blocks in cleaned set of pipelines above:
+
+![Cleaned data pipelines]()
