@@ -50,3 +50,14 @@ Having all the raw data into a bucket in GCS, we run the second set of pipelines
 The following image illustrate the relationship between blocks in cleaned set of pipelines above:
 
 ![Cleaned data pipelines](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/Cleaned%20pipelines.jpg)
+
+## 5. Transform the data 
+
+The last operation over data is performed into BigQuery using `dbt`. The following image illustrate the transformations applied over the cleaned data in BigQuery:
+
+![DAG in dbt]()
+
+After configuring an empty project in dbt as explaned [here](https://docs.getdbt.com/guides/bigquery), I defined 2 sources of data as indicated in the [schema.yml](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/schema.yml) file. 
+
+Then, I created two views in staging area, one for [players_data_cleaned](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/stg_players_data_cleaned.sql) and other for [weather_data_cleaned](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/stg_weather_data_cleaned.sql), which were merged into an optimized table called [fact_transferences](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/core/fact_transfers.sql) by partitioning it using the date of the player's transference.
+
