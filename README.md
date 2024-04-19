@@ -60,7 +60,7 @@ An interactive version of the dashboard can be foun [here](https://lookerstudio.
 
 ### Recommendations
 
-It seems to exist an apparent relationship between the weather in a specific day and the number of player transferences performed in that specific day. However, it is recommended that further investigations need to be done.  
+It seems to exist an apparent relationship between the weather in a day and the number of player transferences performed in that specific day. However, it is recommended that further investigations need to be done.  
 
 ## Further Improvements
 
