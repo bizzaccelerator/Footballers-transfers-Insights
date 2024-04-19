@@ -61,6 +61,6 @@ After configuring an empty project in dbt as explaned [here](https://docs.getdbt
 
 Then, I created two models as views in staging area, one for [players_data_cleaned](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/stg_players_data_cleaned.sql) and other for [weather_data_cleaned](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/stg_weather_data_cleaned.sql), which were merged into an optimized table called [fact_transferences](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/core/fact_transfers.sql) by partitioning it using the date of the player's transference.
 
-## Elaborate a Dashboard
+## 6. Elaborate a Dashboard
 
 Finally, We configure Looker Studio to load data and operates data from BigQuery as indicated [here](https://support.google.com/looker-studio/answer/9171315?hl=en).
