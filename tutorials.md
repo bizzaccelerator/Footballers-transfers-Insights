@@ -35,5 +35,12 @@ After that, we push the Image to Google Artifact Registry. Once tagged, you can 
 
 ## 4. Build the Data Pipelines
 
+The multistep ETL process, is orchestrated using mage-ai, and is composed by 2 set of pipelines. The firstset of pipelines start with the extraction of the transfer data for each player using selenium and its export to GCS, which is called players_raw_data. [players_scraper](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/1_1_players_scraper.py) and [players_to_gcs](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/1_2_players_to_gcs.py) are the mage blocks used here. 
 
+Once players' transferences data is at hand, then a second pipeline is used the blocks [2_1_cities_info_loader](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/2_1_cities_info_loader.py), [2_2_wiki_api_teams](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/2_2_wiki_api_teams.py), [2_3_wiki_teams_info](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/2_3_wiki_teams_info.py) and [2_4_wiki_info_exporter](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/2_4_wiki_info_exporter.py) to consult the seller team's information data in wikipedia API, then export it into GCS.
 
+After that, city name is used to get geographic locations and its corresponding weather at the date of transference by using the following blocks: [3_1_weather_locations](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_1_weather_locations.py), [3_2_curated_weather_data](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_2_curated_weather_data.py), [3_3_weather_data](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_3_weather_data.py) and [3_4_weather_exporter_to_gcs](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/mage_blocks/3_4_weather_exporter_to_gcs.py). 
+
+The following image illustrate the relationship between blocks above:
+
+![]()
