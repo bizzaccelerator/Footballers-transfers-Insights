@@ -55,7 +55,7 @@ The following image illustrate the relationship between blocks in cleaned set of
 
 The last operation over data is performed into BigQuery using `dbt`. The following image illustrate the transformations applied over the cleaned data in BigQuery:
 
-![DAG in dbt]()
+![DAG in dbt](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/DAG_dbt.jpg)
 
 After configuring an empty project in dbt as explaned [here](https://docs.getdbt.com/guides/bigquery), I defined 2 sources of data as indicated in the [schema.yml](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Analytics-dezoomcamp/Footballers-transferences/models/staging/schema.yml) file. 
 
