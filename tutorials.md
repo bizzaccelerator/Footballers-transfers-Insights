@@ -49,4 +49,4 @@ Having all the raw data into a bucket in GCS, we run the second set of pipelines
 
 The following image illustrate the relationship between blocks in cleaned set of pipelines above:
 
-![Cleaned data pipelines]()
+![Cleaned data pipelines](https://github.com/bizzaccelerator/Footballers-transfers-Insights/blob/main/Images/Cleaned%20pipelines.jpg)
